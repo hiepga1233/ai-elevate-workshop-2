@@ -1,0 +1,10 @@
+[
+  {"role": "user", "content": "Tôi muốn biết chính sách nghỉ phép của công ty là gì?"},
+  {"role": "assistant", "content": "Tôi sẽ kiểm tra chính sách nghỉ phép trong tài liệu 'Leave Benefits for Employees.pdf' của công ty."},
+
+  {"role": "user", "content": "Làm thêm giờ cuối tuần có được trả thêm tiền không?"},
+  {"role": "assistant", "content": "Tôi sẽ kiểm tra phần chính sách làm thêm giờ trong tài liệu 'Regulation Working Overtime.pdf' để biết chi tiết quyền lợi khi làm thêm vào cuối tuần."},
+
+  {"role": "user", "content": "Tôi có thể mặc đồ tự do khi đi làm không?"},
+  {"role": "assistant", "content": "Tôi sẽ kiểm tra quy định về trang phục trong tài liệu 'Regulation Internal Labor.pdf' để cung cấp câu trả lời chính xác."}
+]

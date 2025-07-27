@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI shopping assistant</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="/static/script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Conversations</h2>
+      <button onclick="newChat()">+ New Chat</button>
+      <ul id="conversationList">
+      </ul>
+    </aside>
+    <main class="chat-area">
+      <div class="chat-header">HR Assistant</div>
+      <div id="errorMessage" class="error-box" style="display: none;">
+        <span id="errorText">Đây là lỗi.</span>
+        <button id="errorClose" onclick="hideError()">×</button>
+    </div>
+
+      <div class="chat-box" id="chatBox"></div>
+      <div class="input-area">
+        <label class="upload-btn">
+        📎
+        <input type="file" id="fileInput" onchange="uploadFile()" hidden>
+        </label>
+        <textarea id="userInput" rows="2" placeholder="Type your message..."></textarea>
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

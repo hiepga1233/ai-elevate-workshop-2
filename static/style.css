@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #202123;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.sidebar button {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  background: #444654;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar button:hover {
+  background: #565869;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.sidebar li {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background: #343541;
+}
+
+.chat-area {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.chat-box {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.message {
+  max-width: 70%;
+  margin-bottom: 10px;
+  padding: 12px 16px;
+  border-radius: 18px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.user {
+  align-self: flex-end;
+  background: #dcf8c6;
+  margin-left: auto;
+}
+
+.ai {
+  align-self: flex-start;
+  background: #f0f0f0;
+  margin-right: auto;
+}
+
+.input-area {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+#userInput {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: vertical; /* Cho phép kéo lên xuống */
+  min-height: 40px;
+  max-height: 150px;
+}
+
+
+.input-area button {
+  margin-left: 10px;
+  padding: 10px 16px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background: #45a049;
+}
+
+.chat-header {
+  background: #f7f7f7;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.upload-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #666;
+}
+
+.upload-btn:hover {
+  color: #333;
+}
+
+
+.error-box {
+  background-color: #fdecea;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 10px 40px 10px 15px;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 10px;
+  font-size: 14px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+#errorClose {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #721c24;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
