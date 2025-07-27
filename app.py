@@ -12,7 +12,7 @@ import docx
 load_dotenv()
 endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
 api_key = os.getenv("AZURE_OPENAI_API_KEY")
-MODEL = "gpt-4o-mini"
+MODEL = os.getenv("AZURE_OPENAI_MODEL")
 UPLOAD_FOLDER = 'python_uploads_test'
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'docx'}
 
