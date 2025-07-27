@@ -68,6 +68,7 @@ Create a `.env` file in the root folder:
 ```
 AZURE_OPENAI_ENDPOINT=https://your-resource-name.openai.azure.com/
 AZURE_OPENAI_API_KEY=your-azure-api-key
+AZURE_OPENAI_MODEL=your-azure-api-model
 ```
 
 ### 4. Run the App
